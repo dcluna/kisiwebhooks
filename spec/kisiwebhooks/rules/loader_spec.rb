@@ -31,6 +31,13 @@ YAML
 
       it { is_expected.to include('action' => a_kind_of(Kisiwebhooks::Rules::Value)) }
       it { is_expected.to include('created_at' => a_kind_of(Kisiwebhooks::Rules::Time)) }
+
+      describe 'default value type' do
+        subject(:action) { triggers['action'].valid_values }
+
+        it { is_expected.to eq(['unlock']) }
+      end
+
     end
   end
 end

@@ -28,7 +28,7 @@ module Kisiwebhooks::Rules
                                 rule_value
                               else
                                 {
-                                  value: rule_value
+                                  'value' => rule_value
                                 }
                               end
             make_rule(rule_parameters)

@@ -1,0 +1,7 @@
+rules:
+  unlocks:
+    subscribers:
+      - daniel@getkisi.com
+    triggers:
+      action: unlock
+      success: "false"

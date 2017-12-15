@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require "kisiwebhooks/version"
+require_relative "kisiwebhooks/version"
 
 module Kisiwebhooks
-  require 'kisiwebhooks/rules'
+  require_relative 'kisiwebhooks/rules'
   # Your code goes here...
 end
