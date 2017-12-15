@@ -3,7 +3,7 @@
 require 'spec_helper'
 
 RSpec.describe Kisiwebhooks::Rules::Time do
-  subject(:rule) { described_class.new(start_time, end_time) }
+  subject(:rule) { described_class.new("#{start_time} | #{end_time}") }
 
   shared_context 'with start_time' do
     let(:start_time) { '2017-10-12' }
